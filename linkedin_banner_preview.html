@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lakivuo LinkedIn Banner Preview</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f2f5; /* Light grey to mimic LinkedIn page for better preview context */
+            color: #E0E0E0; /* --text-primary */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh; /* Ensure banner is visible */
+            padding: 20px; /* Add some padding around the banner */
+            box-sizing: border-box;
+        }
+        .banner-container {
+            width: 1584px;
+            height: 396px;
+            background-color: #0D0C1D; /* --background-primary from website */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            position: relative; 
+            overflow: hidden;
+        }
+        .banner-container::before, .banner-container::after {
+            content: "";
+            position: absolute;
+            border-radius: 50%;
+            opacity: 0.08; /* Subtler glow */
+            z-index: 0;
+            pointer-events: none; /* Ensure they don't interfere with text selection if needed */
+        }
+        .banner-container::before { 
+            width: 700px;
+            height: 700px;
+            background: radial-gradient(circle, #7F5AF0, transparent 65%); /* --accent-primary */
+            top: -250px;
+            left: -200px;
+        }
+         .banner-container::after { 
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, #00A9E0, transparent 65%); /* --accent-tertiary */
+            bottom: -200px;
+            right: -150px;
+        }
+        .content-wrapper {
+            position: relative; 
+            z-index: 1;
+            padding: 20px; /* Ensure content isn't at the very edge */
+        }
+        .logo-text {
+            font-size: 96px; 
+            font-weight: 800;
+            margin-bottom: 15px;
+            line-height: 1.1;
+        }
+        .logo-text-main {
+            color: #FFFFFF; /* --text-headings */
+        }
+        .logo-text-accent {
+            background: linear-gradient(90deg, #2CB67D, #00A9E0); /* --accent-secondary, --accent-tertiary */
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            font-weight: 800; 
+        }
+        .tagline {
+            font-size: 30px; 
+            color: #A0A0CC; /* --text-secondary */
+            font-weight: 400;
+            letter-spacing: 0.5px;
+            max-width: 800px; /* Prevent tagline from being too wide */
+        }
+    </style>
+</head>
+<body>
+    <div class="banner-container">
+        <div class="content-wrapper">
+            <div class="logo-text">
+                <span class="logo-text-main">Laki</span><span class="logo-text-accent">vuo</span>
+            </div>
+            <div class="tagline">
+                Tekoälyä hyödyntävä oikeusteknologia
+            </div>
+        </div>
+    </div>
+</body>
+</html>

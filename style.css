@@ -264,9 +264,11 @@ section {
     margin-bottom: 1.5rem;
     line-height: 1.2;
     letter-spacing: -1px;
-    background: -webkit-linear-gradient(45deg, var(--accent-primary), #fff, var(--accent-tertiary));
+    background: linear-gradient(45deg, var(--accent-primary), #fff, var(--accent-tertiary));
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-text-fill-color: transparent; /* For WebKit compatibility */
+    color: transparent;                   /* Standard property */
 }
 
 .hero-text p {
@@ -436,8 +438,8 @@ section {
     display: inline-block;
     background: linear-gradient(135deg, var(--accent-primary), var(--accent-tertiary));
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     background-clip: text;
+    color: transparent;
 }
 
 .feature-brief-item h3 {
