@@ -215,11 +215,11 @@ section {
     line-height: 1.2;
     display: inline-block; /* Ensures gradient is only as wide as text */
     background: linear-gradient(90deg, var(--accent-primary), var(--accent-tertiary), var(--accent-secondary), var(--accent-primary)); /* Adjusted gradient for more colors */
-    background-size: 300% auto; /* Wider background for smoother, slower animation */
+    background-size: 700% auto; /* Wider background for smoother, slower animation */
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    animation: shimmer 10s linear infinite; /* Apply shimmer animation */
+    animation: shimmer 25s linear infinite; /* Apply shimmer animation */
 }
 
 .section-title p {
