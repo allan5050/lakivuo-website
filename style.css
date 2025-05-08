@@ -665,6 +665,12 @@ footer {
     margin-top: 1.5rem;
 }
 
+/* Highlight for Lakivuo brand name */
+.lakivuo-highlight {
+    color: var(--accent-primary); /* Vibrant Purple */
+    font-weight: 700; /* Bold */
+}
+
 /* Responsive adjustments */
 @media (max-width: 992px) {
     .hero-video-content {
