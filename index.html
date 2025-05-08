@@ -3,46 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lakivuo - Lakitoimistojen digitaalinen työkalu</title>
-    <link rel="stylesheet" href="[https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">](https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">)
+    <title>Lakivuo - AI-Powered Legal Tech</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Font 'Inter' is imported in CSS -->
 </head>
 <body>
     <!-- Header -->
     <header>
         <div class="header-container">
             <div class="logo">
-                <i class="fas fa-balance-scale"></i> Lakivuo
+                <i class="fa-solid fa-gavel"></i>
+                <span class="logo-text-main">Laki</span><span class="logo-text-accent">vuo</span>
             </div>
-            <button class="mobile-menu-btn" id="mobile-menu-toggle">
+            <button class="mobile-menu-btn" id="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false">
                 <i class="fas fa-bars"></i>
             </button>
             <nav class="nav-links" id="nav-links">
-                <a href="#features">Ominaisuudet</a>
+                <a href="#lakivuo-edge">Ominaisuudet</a>
                 <a href="#demo">Demo</a>
-                <a href="#benefits">Hyödyt</a>
-                <a href="#calendly">Varaa Demo</a>
+                <a href="#new-standard">Ratkaisut</a>
+                <a href="#contact">Ota Yhteyttä</a>
             </nav>
         </div>
     </header>
 
     <!-- Hero Section with Featured Video -->
-    <section class="hero-video">
-        <div class="hero-video-content">
+    <section class="hero-video" id="home">
+        <div class="section-container hero-video-content">
             <div class="hero-text">
-                <h1>Tekoäly mullistaa perukirjojen käsittelyn</h1>
-                <p>Säästä aikaa, vähennä virheitä ja paranna tarkkuutta automatisoimalla perukirjojen käsittely.</p>
+                <h1>Tekoäly: Lakialan Seuraava Vallankumous</h1>
+                <p>Hyödynnä uusinta LLM-tekoälyä: Automatisoi monimutkainen dokumentaatio, saavuta ennennäkemätön tehokkuus ja määrittele asiakaspalvelu uudelleen digitaalisella aikakaudella.</p>
                 <div class="hero-buttons">
-                    <a href="#demo" class="primary-button">
+                    <a href="#demo" class="button primary-button scroll-to">
                         <i class="fas fa-play-circle"></i> Katso Demo
                     </a>
-                    <a href="#calendly" class="secondary-button">
+                    <a href="#contact" class="button secondary-button scroll-to">
                         <i class="fas fa-calendar-alt"></i> Varaa Esittely
                     </a>
                 </div>
             </div>
             <div class="hero-featured-video">
-                <video autoplay muted loop playsinline loading="eager">
+                <video autoplay muted loop playsinline loading="eager" poster="placeholder-hero-video.jpg">
                     <source src="perukirja_v2.mp4" type="video/mp4">
                     Selaimesi ei tue videoelementtiä.
                 </video>
@@ -51,16 +55,21 @@
     </section>
 
     <!-- Feature Videos Section -->
-    <section class="feature-videos">
+    <section class="feature-videos" id="detailed-features">
         <div class="section-container">
+            <div class="section-title">
+                <h2>Lakivuo Toiminnassa: Näe Vallankumous Käytännössä</h2>
+                <p>Konkreettisia esimerkkejä siitä, kuinka Lakivuo muuttaa perinteiset työnkulut tulevaisuuden ratkaisuiksi.</p>
+            </div>
+
             <div class="feature-video-item">
                 <div class="feature-video-content">
                     <div class="feature-info">
-                        <h2>Hallintanäkymä</h2>
-                        <p><i class="fas fa-tasks"></i> Seuraa kaikkia käynnissä olevia tapauksia, tehtäviä ja tulevia tapaamisia yhdessä selkeässä näkymässä.</p>
+                        <h2><i class="fas fa-tachometer-alt"></i> Dynaaminen Hallintanäkymä</h2>
+                        <p>Seuraa kaikkia tapauksia, tehtäviä ja määräaikoja reaaliajassa. Keskitetty näkymä pitää sinut aina ajan tasalla.</p>
                     </div>
                     <div class="feature-video">
-                        <video autoplay muted loop playsinline loading="lazy">
+                        <video autoplay muted loop playsinline loading="lazy" poster="placeholder-dashboard.jpg">
                             <source src="dashboard.mp4" type="video/mp4">
                             Selaimesi ei tue videoelementtiä.
                         </video>
@@ -71,14 +80,14 @@
             <div class="feature-video-item reverse">
                 <div class="feature-video-content">
                     <div class="feature-video">
-                        <video autoplay muted loop playsinline loading="lazy">
+                        <video autoplay muted loop playsinline loading="lazy" poster="placeholder-familytree.jpg">
                             <source src="family_tree.mp4" type="video/mp4">
                             Selaimesi ei tue videoelementtiä.
                         </video>
                     </div>
                     <div class="feature-info">
-                        <h2>Sukupuun Visualisointi</h2>
-                        <p><i class="fas fa-sitemap"></i> Näe perhesuhteet selkeänä sukupuuna, joka auttaa tunnistamaan puuttuvat dokumentit ja varmistamaan perillisten oikeat suhteet.</p>
+                        <h2><i class="fas fa-sitemap"></i> Interaktiivinen Sukupuu</h2>
+                        <p>Visualisoi monimutkaisetkin perhesuhteet selkeästi. Tunnista perilliset ja heidän yhteytensä vaivattomasti.</p>
                     </div>
                 </div>
             </div>
@@ -86,11 +95,11 @@
             <div class="feature-video-item">
                 <div class="feature-video-content">
                     <div class="feature-info">
-                        <h2>Dokumenttien Analysointi</h2>
-                        <p><i class="fas fa-search"></i> Järjestelmä tunnistaa automaattisesti puuttuvat dokumentit, mikä auttaa välttämään juridisia vastuita ja varmistamaan tarkan perukirjan.</p>
+                        <h2><i class="fas fa-file-invoice"></i> Älykäs Dokumenttianalyysi</h2>
+                        <p>Tekoäly analysoi asiakirjat, tunnistaa puutteet ja ristiinviittaa tiedot, varmistaen perusteellisen ja tarkan käsittelyn.</p>
                     </div>
                     <div class="feature-video">
-                        <video autoplay muted loop playsinline loading="lazy">
+                        <video autoplay muted loop playsinline loading="lazy" poster="placeholder-docanalysis.jpg">
                             <source src="doc_analysis_v2.mp4" type="video/mp4">
                             Selaimesi ei tue videoelementtiä.
                         </video>
@@ -104,295 +113,207 @@
     <section class="demo" id="demo">
         <div class="section-container">
             <div class="section-title">
-                <h2>Katso Tuote Toiminnassa</h2>
-                <p>Lyhyt esittely siitä, miten Lakivuo tehostaa työnkulkua</p>
+                <h2>Koe Lakivuon Teho Henkilökohtaisesti</h2>
+                <p>Lyhyt esittely siitä, miten Lakivuo tehostaa ja modernisoi perukirjaprosessia.</p>
             </div>
             <div class="video-container">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/3ijvjakuWJA?si=Q3-7Hq1DDQ4qMher&vq=hd720" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/3ijvjakuWJA?si=Q3-7Hq1DDQ4qMher&vq=hd720&autoplay=0&modestbranding=1&rel=0&color=white&theme=dark" title="Lakivuo Product Demo" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
         </div>
     </section>
 
-    <!-- Features Brief Section -->
-    <section class="features-brief" id="features">
+    <!-- Features Brief Section (Now The Lakivuo Edge) -->
+    <section class="features-brief" id="lakivuo-edge">
         <div class="section-container">
             <div class="section-title">
-                <h2>Tehokkaat Ominaisuudet</h2>
+                <h2>The Lakivuo Edge: Mullista Toimintatapasi Tekoälyllä</h2>
+                <p>Lakivuo ei ole vain työkalu – se on strateginen kumppani, joka antaa yrityksellesi etulyöntiaseman.</p>
             </div>
             <div class="features-brief-grid">
                 <div class="feature-brief-item">
-                    <div class="feature-icon">
-                        <i class="fas fa-file-alt"></i>
-                    </div>
-                    <h3>Automaattinen Perukirjan Luonti</h3>
+                    <div class="feature-icon"><i class="fas fa-rocket"></i></div>
+                    <h3>Hypertehokkuus Vapautettu</h3>
+                    <p>Murskaa perukirjaprosessin työtunnit päivistä tunteihin. Vapauta asiantuntijasi korkean lisäarvon työhön.</p>
                 </div>
                 <div class="feature-brief-item">
-                    <div class="feature-icon">
-                        <i class="fas fa-brain"></i>
-                    </div>
-                    <h3>Testamentin Analysointi</h3>
+                    <div class="feature-icon"><i class="fas fa-lightbulb"></i></div>
+                    <h3>Strateginen Etu Kilpailijoihin</h3>
+                    <p>LLM-pohjaiset analyysit tuottavat ylivoimaista tarkkuutta ja minimoivat riskit. Tarjoa palveluita, joihin muut eivät pysty.</p>
                 </div>
                 <div class="feature-brief-item">
-                    <div class="feature-icon">
-                        <i class="fas fa-sitemap"></i>
-                    </div>
-                    <h3>Sukupuun Visualisointi</h3>
+                    <div class="feature-icon"><i class="fas fa-chart-line"></i></div>
+                    <h3>Skaalaa Visiotasi Rajattomasti</h3>
+                    <p>Hallitse vaivatta kasvavia asiakasmääriä ja monimutkaisia tapauksia. Rakenna räätälöityjä ratkaisuja tehokkaan APImme avulla. Varmista toimistosi tulevaisuus.</p>
                 </div>
                 <div class="feature-brief-item">
-                    <div class="feature-icon">
-                        <i class="fas fa-search"></i>
-                    </div>
-                    <h3>Puuttuvien Dokumenttien Tunnistus</h3>
-                </div>
-                <div class="feature-brief-item">
-                    <div class="feature-icon">
-                        <i class="fas fa-tasks"></i>
-                    </div>
-                    <h3>Tapausten Hallinta</h3>
-                </div>
-                <div class="feature-brief-item">
-                    <div class="feature-icon">
-                        <i class="fas fa-clock"></i>
-                    </div>
-                    <h3>Aikajana</h3>
+                    <div class="feature-icon"><i class="fas fa-users-cog"></i></div>
+                    <h3>Ylivertainen Asiakaskokemus</h3>
+                    <p>Tarjoa nopeampaa, läpinäkyvämpää ja teknologisesti edistynyttä palvelua, joka tekee vaikutuksen moderneihin asiakkaisiin.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Pain Points Section -->
-<section class="pain-points">
-    <div class="section-container">
-        <div class="section-title">
-            <h2>Ratkaisumme yleisimpiin haasteisiin</h2>
-            <p>Perukirjojen käsittely aiheuttaa usein näitä ongelmia, joihin tarjoamme ratkaisun</p>
-        </div>
-        <div class="pain-points-grid">
-            <div class="pain-point-item">
-                <div class="pain-point-icon">
-                    <i class="fas fa-clock"></i>
-                </div>
-                <h3>Aikaa vievä prosessi</h3>
-                <p>Perukirjan laatiminen vie tavallisesti 5-15 tuntia. Järjestelmämme lyhentää tämän 1-3 tuntiin.</p>
-            </div>
-            <div class="pain-point-item">
-                <div class="pain-point-icon">
-                    <i class="fas fa-exclamation-triangle"></i>
-                </div>
-                <h3>Virheellisyydet</h3>
-                <p>Puuttuvat dokumentit tai virheelliset tiedot voivat aiheuttaa oikeudellisia ongelmia. Tekoäly tunnistaa nämä puutteet automaattisesti.</p>
-            </div>
-            <div class="pain-point-item">
-                <div class="pain-point-icon">
-                    <i class="fas fa-users"></i>
-                </div>
-                <h3>Monimutkaiset perhesuhteet</h3>
-                <p>Sukupuiden selvittäminen on vaikeaa ja aikaa vievää. Visualisointityökalumme tekee tästä helppoa.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-    <!-- Benefits Section -->
-    <section class="benefits" id="benefits">
+    <!-- Pain Points Section (Now "New Standard") -->
+    <section class="pain-points" id="new-standard">
         <div class="section-container">
             <div class="section-title">
-                <h2>Miksi Valita Lakivuo?</h2>
+                <h2>Enemmän Kuin Tehokkuutta: Lakialan Uusi Standardi</h2>
+                <p>Unohda vanhat pullonkaulat. Lakivuo ei ainoastaan ratkaise eilispäivän haasteita – se luo perustan tulevaisuuden menestykselle.</p>
             </div>
-            <div class="benefits-content">
-                <div class="benefits-text">
-                    <h3>Tehosta toimintaa ja vältä juridisia vastuita</h3>
-                    <ul class="benefits-list">
-                        <li>
-                            <i class="fas fa-check-circle"></i>
-                            <div>
-                                <strong>Säästä aikaa</strong>
-                                <p>Vähennä rutiinitehtäviin käytettyä aikaa jopa 70%</p>
-                            </div>
-                        </li>
-                        <li>
-                            <i class="fas fa-check-circle"></i>
-                            <div>
-                                <strong>Vähennä virheitä</strong>
-                                <p>Tekoäly tarkistaa puuttuvat dokumentit automaattisesti</p>
-                            </div>
-                        </li>
-                        <li>
-                            <i class="fas fa-check-circle"></i>
-                            <div>
-                                <strong>Helpota yhteistyötä</strong>
-                                <p>Kaikki dokumentit ja analyysit samassa paikassa</p>
-                            </div>
-                        </li>
-                    </ul>
+            <div class="pain-points-grid">
+                <div class="pain-point-item">
+                    <div class="pain-point-icon"><i class="fas fa-exchange-alt"></i></div>
+                    <h3>Aiemmin: Tuntien Manuaalityö <br><span class="lakivuo-way-arrow">&#8680;</span> Nyt: Minuuteissa Valmista</h3>
+                    <p>Lakivuo automatisoi aikaa vievimmät rutiinit, kuten perukirjojen ja testamenttien analysoinnin, vapauttaen asiantuntijoidesi aikaa strategiseen työhön.</p>
                 </div>
-                <div class="benefits-video">
-                    <video autoplay muted loop playsinline loading="lazy">
-                        <source src="perukirja_v2.mp4" type="video/mp4">
-                        Selaimesi ei tue videoelementtiä.
-                    </video>
+                <div class="pain-point-item">
+                    <div class="pain-point-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h3>Aiemmin: Piilevät Virheet & Riskit <br><span class="lakivuo-way-arrow">&#8680;</span> Nyt: AI-Varmistettu Tarkkuus</h3>
+                    <p>LLM-tekoälymme syväanalysoi dokumentit, tunnistaa puutteet ja ristiinviittaa tiedot, minimoiden kalliit virheet ja juridiset vastuut.</p>
+                </div>
+                <div class="pain-point-item">
+                    <div class="pain-point-icon"><i class="fas fa-sitemap"></i></div>
+                    <h3>Aiemmin: Monimutkaisuuden Pelko <br><span class="lakivuo-way-arrow">&#8680;</span> Nyt: Selkeys & Hallinta Visualisoinnin Avulla</h3>
+                    <p>Monimutkaisetkin perhe- ja omistussuhteet muuttuvat ymmärrettäviksi interaktiivisen sukupuu- ja visualisointityökalujemme avulla.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- API & Partnership Section -->
-<section class="api-partners">
-    <div class="section-container">
-        <div class="section-title">
-            <h2>API Integraatio & Kumppanuudet</h2>
-            <p>Tarjoamme rajapintaratkaisuja innovatiivisille lakitoimistoille ja hautaustoimistoille</p>
-        </div>
-        <div class="api-content">
-            <div class="api-info">
-                <h3>Rakenna oma ratkaisusi Lakivuo:n avulla</h3>
-                <p>Perintöasioiden käsittelyä voi tehostaa entisestään integroimalla Lakivuo:n teknologian suoraan omiin järjestelmiisi. Tarjoamme API-rajapintaratkaisuja kumppaneillemme:</p>
-                
-                <ul class="api-features">
-                    <li>
-                        <i class="fas fa-plug"></i>
-                        <div>
-                            <strong>Saumaton integraatio</strong>
-                            <p>Liitä perukirjatyökalut suoraan omaan verkkosivustoosi tai järjestelmääsi</p>
-                        </div>
-                    </li>
-                    <li>
-                        <i class="fas fa-code"></i>
-                        <div>
-                            <strong>Mukautettavat ratkaisut</strong>
-                            <p>Rakenna omille asiakkaillesi sopiva käyttöliittymä hyödyntäen Lakivuo:n tekoälyä</p>
-                        </div>
-                    </li>
-                    <li>
-                        <i class="fas fa-handshake"></i>
-                        <div>
-                            <strong>Kumppanuusohjelma</strong>
-                            <p>Tarjoamme houkuttelevia yhteistyömalleja palveluntarjoajille, jotka jakavat visiomme</p>
-                        </div>
-                    </li>
-                </ul>
-                
-                <div class="api-cta">
-                    <a href="#calendly" class="primary-button">
-                        <i class="fas fa-comments"></i> Keskustele kumppanuudesta
-                    </a>
-                </div>
-            </div>
-            <div class="api-image">
-                
-                <div class="api-code-example">
-                    <pre><code>
-// Esimerkki API-kutsusta
-const response = await fetch('[https://api.lakivuo.com/analyze',](https://api.lakivuo.com/analyze',) {
-  method: 'POST',
-  headers: {'Content-Type': 'application/json'},
-  body: JSON.stringify({
-    documentId: 'testament-12345',
-    clientId: 'your-client-id'
-  })
-});
-                    </code></pre>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
     <!-- CTA Section -->
-    <section class="cta">
+    <section class="cta-section" id="contact">
         <div class="section-container">
-            <h2>Valmis tehostamaan perintöasioiden käsittelyä?</h2>
-            <p>Varaa ilmainen demo nyt!</p>
-            <a href="#calendly" class="primary-button pulse">
-                <i class="fas fa-calendar-alt"></i> Varaa Ilmainen Demo
+            <div class="section-title">
+                <h2>Oletko Valmis Johtamaan Alan Muutosta?</h2>
+                <p>Ota yhteyttä ja varaa henkilökohtainen esittely. Näytämme, miten Lakivuo voi auttaa juuri sinun toimistoasi.</p>
+            </div>
+            <a href="#calendly-section-target" class="button primary-button scroll-to">
+                <i class="fas fa-calendar-check"></i> Varaa Strateginen Keskustelu & Demo
             </a>
         </div>
     </section>
-
-    <!-- Calendly Section -->
-    <section class="contact" id="calendly">
+    
+    <!-- API Partners Section - Simplified -->
+    <section class="api-partners" id="api-partner"> 
         <div class="section-container">
             <div class="section-title">
-                <h2>Varaa Aika Demoon</h2>
-                <p>Valitse sopiva aika henkilökohtaiseen esittelyyn tai <a href="mailto:lakivuo@gmail.com?subject=Perukirja%20AI%20Tiedustelu" class="email-link">lähetä sähköpostia</a></p>
+                <h2>Rakenna Tulevaisuutta Kanssamme: API & Integraatiomahdollisuudet</h2>
+                <p>Tarjoamme edelläkävijöille työkalut räätälöityjen ratkaisujen luomiseen ja palvelutarjooman laajentamiseen. Tutustu, kuinka voit integroida Lakivuon ytimen omaan innovaatioosi.</p>
             </div>
-            <!-- Calendly inline widget -->
-<div class="calendly-inline-widget" data-url="https://calendly.com/allann/60min"style="min-width:320px;height:700px;"></div>
-<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+            <!-- Add partner logos here if available, e.g.: -->
+            <!--
+            <div class="api-partners-grid">
+                <img src="logo-placeholder1.svg" alt="Partner 1" class="partner-logo">
+                <img src="logo-placeholder2.svg" alt="Partner 2" class="partner-logo">
+                <img src="logo-placeholder3.svg" alt="Partner 3" class="partner-logo">
+            </div>
+            -->
+        </div>
+    </section>
+
+    <!-- Calendly Embed Section -->
+    <section class="calendly-section" id="calendly-section-target"> 
+        <div class="section-container">
+            <div class="section-title">
+                <h2>Varaa Esittelyaika</h2>
+                <p>Valitse sinulle sopiva aika kalenterista, niin keskustellaan tarpeistasi tarkemmin.</p>
+            </div>
+            <!-- Calendly inline widget begin -->
+            <div class="calendly-inline-widget" data-url="https://calendly.com/allan-aahlman/30min?hide_event_type_details=1&hide_gdpr_banner=1&background_color=1a192f&text_color=e0e0e0&primary_color=7f5af0" style="min-width:320px;height:700px;"></div>
+            <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+            <!-- Calendly inline widget end -->
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
         <div class="footer-container">
-            <div class="footer-about">
-                <div class="footer-logo">
-                    <i class="fas fa-balance-scale"></i> Lakivuo
-                </div>
-                <p>Tekoälyä hyödyntävä ratkaisu perintöasioiden käsittelyyn lakitoimistoille ja hautaustoimistoille.</p>
-                <div class="footer-social">
-                    <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-                </div>
+            <div class="footer-logo">
+                <i class="fa-solid fa-gavel"></i> Laki<span class="logo-text-accent">vuo</span>
             </div>
-            <div class="footer-links">
-                <h3>Palvelu</h3>
-                <ul>
-                    <li><a href="#features">Ominaisuudet</a></li>
-                    <li><a href="#demo">Demo</a></li>
-                    <li><a href="#benefits">Hyödyt</a></li>
-                </ul>
+            <ul class="footer-links">
+                <li><a href="#home">Alkuun</a></li>
+                <li><a href="#lakivuo-edge">Ominaisuudet</a></li>
+                <li><a href="#demo">Demo</a></li>
+                <li><a href="#new-standard">Ratkaisut</a></li>
+                <li><a href="#contact">Ota Yhteyttä</a></li>
+                <li><a href="#">Tietosuoja</a></li> <!-- Placeholder -->
+            </ul>
+            <div class="social-icons">
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
             </div>
-            <div class="footer-links">
-                <h3>Yhteystiedot</h3>
-                <ul>
-                    <li><a href="mailto:lakivuo@gmail.com">lakivuo@gmail.com</a></li>
-                    <li><a href="#calendly">Varaa Demo</a></li>
-                </ul>
+            <div class="footer-bottom-text">
+                &copy; <span id="currentYear"></span> Lakivuo. Kaikki oikeudet pidätetään. 
             </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2025 Lakivuo. Kaikki oikeudet pidätetään.</p>
         </div>
     </footer>
 
     <script>
         // Mobile menu toggle
-        const mobileMenuBtn = document.getElementById('mobile-menu-toggle');
+        const menuToggle = document.getElementById('mobile-menu-toggle');
         const navLinks = document.getElementById('nav-links');
 
-        mobileMenuBtn.addEventListener('click', () => {
+        menuToggle.addEventListener('click', () => {
             navLinks.classList.toggle('active');
+            const expanded = navLinks.classList.contains('active');
+            menuToggle.setAttribute('aria-expanded', expanded);
         });
 
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                
-                // Close mobile menu if open
-                navLinks.classList.remove('active');
-                
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
+        // Close menu when a link is clicked
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                if (navLinks.classList.contains('active')) {
+                    navLinks.classList.remove('active');
+                    menuToggle.setAttribute('aria-expanded', 'false');
+                }
             });
         });
 
-        // Animation on scroll
+        // Set current year in footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // Smooth scroll for internal links with class .scroll-to
+        document.querySelectorAll('a.scroll-to').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Optional: Intersection Observer for animations
+        const animatedElements = document.querySelectorAll('.hero-text, .hero-featured-video, .feature-video-item, .feature-brief-item, .pain-point-item');
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
-                    entry.target.classList.add('fade-in');
+                    // Apply specific animations based on class, or a general one
+                    if (entry.target.classList.contains('hero-text')) {
+                        entry.target.style.animation = 'fadeInLeft 1s ease-out forwards';
+                    } else if (entry.target.classList.contains('hero-featured-video')) {
+                        entry.target.style.animation = 'fadeInRight 1s ease-out 0.3s forwards';
+                    } else {
+                        // General fadeInUp for other observed elements
+                        entry.target.style.animation = 'fadeInUp 0.8s ease-out forwards';
+                    }
+                    observer.unobserve(entry.target); // Animate only once
                 }
             });
-        }, { threshold: 0.1 });
+        }, { threshold: 0.1 }); // Trigger when 10% of the element is visible
 
-        document.querySelectorAll('.section-title, .feature-brief-item, .benefits-text, .benefits-video, .feature-video')
-            .forEach(element => {
-                element.classList.remove('fade-in');
-                observer.observe(element);
-            });
+        animatedElements.forEach(el => {
+            // Initially hide elements that will be animated in, to prevent flash of unstyled content
+            el.style.opacity = '0'; 
+            observer.observe(el);
+        });
+
     </script>
 </body>
 </html>
