@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Check, Calendar, Upload, FileText, Shield, ChevronLeft, ChevronRight, User, Users, Briefcase, Clock, Banknote, PlusCircle, LockKeyhole, Download, Heart } from 'lucide-react';
+import { Check, Calendar, Upload, FileText, Shield, ChevronLeft, ChevronRight, User, Users, Briefcase, Clock, Banknote, PlusCircle, LockKeyhole, Heart } from 'lucide-react';
 const WidgetDemo = () => {
     const [activeSection, setActiveSection] = useState('demo');
     const [demoStep, setDemoStep] = useState(0);
@@ -408,12 +408,9 @@ const WidgetDemo = () => {
             React.createElement("h2", { className: "text-3xl md:text-4xl font-bold mb-6" }, "Ota Lakivuo k\u00E4ytt\u00F6\u00F6n"),
             React.createElement("p", { className: "text-xl text-gray-300 mb-10 max-w-2xl mx-auto" }, "Lis\u00E4\u00E4 konversiota, s\u00E4\u00E4st\u00E4 ty\u00F6tunteja ja tarjoa nykyaikainen asiakaskokemus."),
             React.createElement("div", { className: "flex flex-wrap gap-4 justify-center" },
-                React.createElement("button", { className: "px-8 py-3 bg-white text-blue-900 font-semibold rounded-lg hover:bg-gray-100 flex items-center" },
+                React.createElement("a", { href: "#calendly-section-target", className: "px-8 py-3 bg-white text-blue-900 font-semibold rounded-lg hover:bg-gray-100 flex items-center scroll-to" },
                     React.createElement(Calendar, { className: "mr-2 h-5 w-5" }),
-                    "Varaa demotapaaminen"),
-                React.createElement("button", { className: "px-8 py-3 bg-blue-700 text-white font-semibold rounded-lg hover:bg-blue-600 flex items-center" },
-                    React.createElement(Download, { className: "mr-2 h-5 w-5" }),
-                    "Lataa esite")))));
+                    "Varaa demotapaaminen")))));
     // Navigation tabs
     const Tabs = () => (React.createElement("div", { className: "flex flex-wrap border-b border-gray-800 mb-8" },
         React.createElement("button", { onClick: () => setActiveSection('demo'), className: `px-6 py-3 font-medium ${activeSection === 'demo' ? 'text-blue-500 border-b-2 border-blue-500' : 'text-gray-400'}` }, "Widgetin demo"),

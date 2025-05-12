@@ -796,14 +796,14 @@ const WidgetDemo = () => {
         </p>
         
         <div className="flex flex-wrap gap-4 justify-center">
-          <button className="px-8 py-3 bg-white text-blue-900 font-semibold rounded-lg hover:bg-gray-100 flex items-center">
+          <a 
+            href="#calendly-section-target" 
+            className="px-8 py-3 bg-white text-blue-900 font-semibold rounded-lg hover:bg-gray-100 flex items-center scroll-to"
+          >
             <Calendar className="mr-2 h-5 w-5" />
             Varaa demotapaaminen
-          </button>
-          <button className="px-8 py-3 bg-blue-700 text-white font-semibold rounded-lg hover:bg-blue-600 flex items-center">
-            <Download className="mr-2 h-5 w-5" />
-            Lataa esite
-          </button>
+          </a>
+           
         </div>
       </div>
     </div>
