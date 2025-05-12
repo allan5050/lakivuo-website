@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Tailwind CSS for React components -->
+    <script src="https://cdn.tailwindcss.com"></script>
     <!-- Font 'Inter' is imported in CSS -->
 </head>
 <body>
@@ -26,9 +28,21 @@
                 <a href="#lakivuo-edge">Ominaisuudet</a>
                 <a href="#new-standard">Ratkaisut</a>
                 <a href="#contact">Ota Yhteyttä</a>
+                <a href="#perukirja-widget-demo">Perukirja Widget</a>
             </nav>
         </div>
     </header>
+    <!-- Perukirja Widget Demo Section -->
+    <section class="perukirja-widget-demo" id="perukirja-widget-demo">
+        <div class="section-container">
+            <div class="section-title">
+                <h2>Tehosta asianajotoimistosi tai hautaustoimistosi perukirjapalvelua</h2>
+                <p>Helpota asiakkaitasi, automatisoi rutiinitöitä ja kasvata liiketoimintaasi modernilla työkalulla</p>
+            </div>
+            
+            <div id="perukirja-widget-root"></div>
+        </div>
+    </section>
 
     <!-- Hero Section with Featured Video -->
     <section class="hero-video" id="home">
@@ -318,5 +332,18 @@
         });
 
     </script>
+    <!-- Import map to resolve ES module dependencies -->
+    <script type="importmap">
+    {
+      "imports": {
+        "react": "https://esm.sh/react@18.2.0",
+        "react-dom/client": "https://esm.sh/react-dom@18.2.0/client",
+        "lucide-react": "https://esm.sh/lucide-react@0.395.0" 
+      }
+    }
+    </script>
+    <!-- Load the mounting script as a module -->
+    <script type="module" src="mount-widget.js"></script>
+
 </body>
 </html>

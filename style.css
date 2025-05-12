@@ -699,6 +699,45 @@ footer {
         flex-direction: column;
         text-align: center;
     }
+}
+
+/* Perukirja Widget Demo Section Styles */
+.perukirja-widget-demo {
+    background-color: var(--background-primary);
+    padding: 80px 0;
+    color: var(--text-primary);
+}
+
+.perukirja-widget-demo .section-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.perukirja-widget-demo .section-title h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    background: linear-gradient(45deg, var(--accent-primary), var(--accent-tertiary));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+
+.perukirja-widget-demo .section-title p {
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#perukirja-widget-root {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    /* The widget will apply its own styling from React */
+}
     .feature-video {
         max-width: 100%;
         margin-top: 2rem;
@@ -706,7 +745,6 @@ footer {
     .feature-video-item.reverse .feature-video {
         margin-top: 2rem;
     }
-}
 
 @media (max-width: 768px) {
     .nav-links {
