@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testamentti Lead Widget Demo</title>
+    <script src="https://cdn.tailwindcss.com"></script> <!-- Tailwind CSS -->
+    <style>
+        body { background-color: #f0f4f8; padding: 20px; font-family: sans-serif; }
+        #testamentti-lead-widget-root { max-width: 768px; margin: 2rem auto; }
+    </style>
+    <script type="importmap">
+    {
+      "imports": {
+        "react": "https://esm.sh/react@18.2.0",
+        "react-dom/client": "https://esm.sh/react-dom@18.2.0/client",
+        "lucide-react": "https://esm.sh/lucide-react@0.395.0" 
+      }
+    }
+    </script>
+</head>
+<body>
+    <h1>Testamentin Esitietojen Keräys - Widget Demo</h1>
+    <div id="testamentti-lead-widget-root">
+        <!-- Testamentti Widget will be loaded here -->
+    </div>
+    <!-- Adjust path as necessary -->
+    <script type="module" src="./scripts/mount-testamentti-widget.js"></script>
+</body>
+</html>
