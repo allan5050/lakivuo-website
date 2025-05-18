@@ -391,6 +391,17 @@ section {
     border-radius: var(--border-radius-medium);
 }
 
+/* Styles for image hover and click enhancement */
+.feature-video img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer; /* Indicates the image is clickable */
+}
+
+.feature-video img:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15); /* Enhance shadow on hover */
+}
+
 /* Demo Section */
 #demo {
     display: none;

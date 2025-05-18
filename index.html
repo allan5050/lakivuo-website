@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lakivuo – Tekoälyä hyödyntävä oikeusteknologia</title>
+    <title>ToimiVuo – Hautaustoimiston hallintajärjestelmä</title>
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- Tailwind CSS for React components -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind CSS (if still used by any components, otherwise can be removed if no React components remain) -->
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
     <!-- Font 'Inter' is imported in CSS -->
 </head>
 <body>
@@ -18,215 +18,238 @@
     <header>
         <div class="header-container">
             <div class="logo">
-                <i class="fa-solid fa-gavel"></i>
-                <span class="logo-text-main">Laki</span><span class="logo-text-accent">vuo</span>
+                <span class="logo-text-main">Toimi</span><span class="logo-text-accent">Vuo</span>
             </div>
             <button class="mobile-menu-btn" id="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false">
                 <i class="fas fa-bars"></i>
             </button>
             <nav class="nav-links" id="nav-links">
-                <a href="#lakivuo-edge">Ominaisuudet</a>
-                <a href="#new-standard">Ratkaisut</a>
-                <a href="#contact">Ota Yhteyttä</a>
-                <a href="#perukirja-widget-demo">Perukirja Widget</a>
+                <a href="#toimivuo-ominaisuudet">Ominaisuudet</a>
+                <a href="#hyodyt">Hyödyt</a>
+                <a href="#yhteys">Ota Yhteyttä</a>
             </nav>
         </div>
     </header>
-    <!-- Hero Section with Featured Video -->
-    <section class="hero-video" id="home">
+    <!-- Hero Section -->
+    <section class="hero-video" id="home"> <!-- Re-using hero-video class for styling, but will use an image -->
         <div class="section-container hero-video-content">
             <div class="hero-text">
-                <h1>Tekoäly tehostaa perukirjojen laadintaa lakitoimistoille ja hautaustoimistoille</h1>
-                <p><span class="lakivuo-highlight">Lakivuo</span> automatisoi perukirjaprosessinne edistyneellä LLM-tekoälyllä. Säästäkää tunteja, minimoikaa virheet ja palvelkaa asiakkaitanne nopeammin ja tarkemmin kuin koskaan.</p>
+                <h1>Nykyaikainen hallintajärjestelmä hautaustoimistoille</h1>
+                <p><span class="lakivuo-highlight">ToimiVuo</span> tehostaa hautaustoimistosi arkea. Hallitse kaikkia prosesseja vaivattomasti yhdestä paikasta – asiakastapaamisista ja kuljetuksista aina kukkatilauksiin ja laskutukseen.</p>
                 <div class="hero-buttons">
-                    <!--<a href="#demo" class="button primary-button scroll-to">
-                        <i class="fas fa-play-circle"></i> Katso Demo
-                    </a>-->
-                    <a href="#contact" class="button secondary-button scroll-to">
+                    <a href="#yhteys" class="button primary-button scroll-to">
                         <i class="fas fa-calendar-alt"></i> Varaa Esittely
                     </a>
                 </div>
             </div>
-            <div class="hero-featured-video">
-                <video autoplay muted loop playsinline loading="eager">
-                    <source src="perukirja_v2.mp4" type="video/mp4">
-                    Selaimesi ei tue videoelementtiä.
-                </video>
+            <div class="hero-featured-video"> <!-- This will be an image -->
+                <img src="images/dashboard.png" alt="ToimiVuo Kojelauta" style="width:100%; height:auto; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
             </div>
         </div>
     </section>
 
-    <!-- Feature Videos Section -->
-    <section class="feature-videos" id="detailed-features">
+    <!-- Features Section -->
+    <section class="feature-videos" id="toimivuo-ominaisuudet"> <!-- Renamed and repurposed -->
         <div class="section-container">
             <div class="section-title">
-                <h2><span class="lakivuo-highlight">Lakivuo</span> toiminnassa: näe käänteentekevä käytännössä</h2>
-                <p>Konkreettisia esimerkkejä siitä, kuinka <span class="lakivuo-highlight">Lakivuo</span> muuttaa perinteiset työnkulut tulevaisuuden ratkaisuiksi.</p>
+                <h2><span class="lakivuo-highlight">ToimiVuo</span> – Kaikki työkalut menestyksekkääseen hallintaan</h2>
+                <p>Tutustu ToimiVuon keskeisiin ominaisuuksiin, jotka on suunniteltu helpottamaan hautaustoimiston päivittäistä työtä.</p>
             </div>
 
-            <div class="feature-video-item">
+            <div class="feature-video-item"> <!-- Kojelauta -->
                 <div class="feature-video-content">
                     <div class="feature-info">
-                        <h2><i class="fas fa-tachometer-alt"></i> Dynaaminen hallintanäkymä</h2>
-                        <p>Seuraa kaikkia tapauksia, tehtäviä ja määräaikoja reaaliajassa. Keskitetty näkymä pitää sinut aina ajan tasalla.</p>
+                        <h2><i class="fas fa-tachometer-alt"></i> Selkeä Kojelauta</h2>
+                        <p>Saat välittömän yleiskuvan kaikista aktiivisista tapauksista, tulevista tehtävistä, tapaamisista ja talouden tunnusluvuista. Pysy aina ajan tasalla toimistosi tilanteesta.</p>
                     </div>
-                    <div class="feature-video">
-                        <video autoplay muted loop playsinline loading="lazy">
-                            <source src="dashboard finnish.mp4" type="video/mp4">
-                            Selaimesi ei tue videoelementtiä.
-                        </video>
+                    <div class="feature-video"> <!-- Image instead of video -->
+                        <a href="images/dashboard.png" target="_blank" rel="noopener noreferrer">
+                            <img src="images/dashboard.png" alt="ToimiVuo Kojelauta Yksityiskohta" style="width:100%; height:auto; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                        </a>
                     </div>
                 </div>
             </div>
             
-            <div class="feature-video-item reverse">
+            <div class="feature-video-item reverse"> <!-- Kalenteri -->
                 <div class="feature-video-content">
-                    <div class="feature-video">
-                        <video autoplay muted loop playsinline loading="lazy">
-                            <source src="family_tree.mp4" type="video/mp4">
-                            Selaimesi ei tue videoelementtiä.
-                        </video>
+                    <div class="feature-video"> <!-- Image instead of video -->
+                        <a href="images/calendar.png" target="_blank" rel="noopener noreferrer">
+                            <img src="images/calendar.png" alt="ToimiVuo Kalenteri" style="width:100%; height:auto; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                        </a>
                     </div>
                     <div class="feature-info">
-                        <h2><i class="fas fa-sitemap"></i> Interaktiivinen sukupuu</h2>
-                        <p>Visualisoi monimutkaisetkin perhesuhteet selkeästi. Tunnista perilliset ja heidän yhteytensä vaivattomasti.</p>
+                        <h2><i class="fas fa-calendar-days"></i> Integroitu Kalenteri</h2>
+                        <p>Hallinnoi vaivattomasti siunaus- ja muistotilaisuuksien aikatauluja, kuljetuksia, tapaamisia ja muita tärkeitä menoja. Jaa kalenterinäkymiä tiimisi kesken.</p>
                     </div>
                 </div>
             </div>
             
-            <div class="feature-video-item">
+            <div class="feature-video-item"> <!-- Hautajaisjärjestelyt -->
                 <div class="feature-video-content">
                     <div class="feature-info">
-                        <h2><i class="fas fa-file-invoice"></i> Älykäs dokumenttianalyysi</h2>
-                        <p>Tekoäly analysoi asiakirjat, tunnistaa puutteet ja ristiinviittaa tiedot, varmistaen perusteellisen ja tarkan käsittelyn.</p>
+                        <h2><i class="fas fa-clipboard-list"></i> Hautajaisjärjestelyjen Hallinta</h2>
+                        <p>Kattava työkalu hautajaisten suunnitteluun ja hallintaan. Kirjaa ylös kaikki yksityiskohdat vainajan tiedoista ja toiveista aina seremonian kulkuun ja muistotilaisuuden tarjoiluihin.</p>
                     </div>
-                    <div class="feature-video">
-                        <video autoplay muted loop playsinline loading="lazy">
-                            <source src="doc_analysis_v2.mp4" type="video/mp4">
-                            Selaimesi ei tue videoelementtiä.
-                        </video>
+                    <div class="feature-video"> <!-- Image instead of video -->
+                        <a href="images/funeral.png" target="_blank" rel="noopener noreferrer">
+                            <img src="images/funeral.png" alt="ToimiVuo Hautajaisjärjestelyt" style="width:100%; height:auto; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                        </a>
                     </div>
                 </div>
             </div>
+
+            <div class="feature-video-item reverse"> <!-- Kukkatilaukset -->
+                <div class="feature-video-content">
+                     <div class="feature-video"> <!-- Image instead of video -->
+                        <a href="images/flowers.png" target="_blank" rel="noopener noreferrer">
+                            <img src="images/flowers.png" alt="ToimiVuo Kukkatilaukset" style="width:100%; height:auto; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                        </a>
+                    </div>
+                    <div class="feature-info">
+                        <h2><i class="fas fa-spa"></i> Kukkatilausten Seuranta</h2>
+                        <p>Hallinnoi kukkatoimituksia, tuotteita, hintoja ja toimittajia keskitetysti. Varmista, että kaikki kukkalaitteet ovat ajallaan ja toiveiden mukaisia.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="feature-video-item"> <!-- Kuljetukset -->
+                <div class="feature-video-content">
+                    <div class="feature-info">
+                        <h2><i class="fas fa-truck"></i> Kuljetusten Koordinointi</h2>
+                        <p>Järjestä ja seuraa vainajien kuljetuksia tehokkaasti. Hallitse aikatauluja, ajoneuvoja ja kuljettajia. Integroi tiedot suoraan tapauksen muihin osiin.</p>
+                    </div>
+                    <div class="feature-video"> <!-- Image instead of video -->
+                        <a href="images/transport.png" target="_blank" rel="noopener noreferrer">
+                            <img src="images/transport.png" alt="ToimiVuo Kuljetukset" style="width:100%; height:auto; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="feature-video-item reverse"> <!-- Varastonhallinta -->
+                <div class="feature-video-content">
+                     <div class="feature-video"> <!-- Image instead of video -->
+                        <a href="images/varasto.png" target="_blank" rel="noopener noreferrer">
+                            <img src="images/varasto.png" alt="ToimiVuo Varastonhallinta" style="width:100%; height:auto; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                        </a>
+                    </div>
+                    <div class="feature-info">
+                        <h2><i class="fas fa-boxes-stacked"></i> Varastonhallinta</h2>
+                        <p>Pidä kirjaa arkuista, uurnista ja muista hautaustarvikkeista. Seuraa varastosaldoja, myyntihintoja ja toimittajia. Vältä puutteet ja optimoi hankinnat.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="feature-video-item"> <!-- UUSI: Integraatiot -->
+                <div class="feature-video-content">
+                    <div class="feature-info">
+                        <h2><i class="fas fa-cogs"></i> Laajat Integraatiomahdollisuudet (Suunnitteilla)</h2>
+                        <p>Suunnittelemme ToimiVuohon saumattomia integraatioita suosittuihin taloushallinto-, laskutus- ja varastonhallintajärjestelmiin. Tämä vähentäisi manuaalista työtä entisestään ja yhdistäisi kaikki liiketoimintasi osa-alueet. Kerro meille, mitkä integraatiot olisivat sinulle tärkeimpiä!</p>
+                    </div>
+                    <div class="feature-video"> <!-- Image instead of video -->
+                        <a href="images/integ.png" target="_blank" rel="noopener noreferrer">
+                            <img src="images/integ.png" alt="ToimiVuo Integraatiot" style="width:100%; height:auto; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
 
-    <!-- Features Brief Section (Now The Lakivuo Edge) -->
-    <section class="features-brief" id="lakivuo-edge">
+    <!-- Benefits Section (Replaces Lakivuo Edge) -->
+    <section class="features-brief" id="hyodyt">
         <div class="section-container">
             <div class="section-title">
-                <h2>The <span class="lakivuo-highlight">Lakivuo</span> edge: mullista toimintatapasi tekoälyllä</h2>
-                <p><span class="lakivuo-highlight">Lakivuo</span> ei ole vain työkalu – se on strateginen kumppani, joka antaa yrityksellesi etulyöntiaseman.</p>
+                <h2>Miksi valita <span class="lakivuo-highlight">ToimiVuo</span>?</h2>
+                <p><span class="lakivuo-highlight">ToimiVuo</span> ei ole vain ohjelmisto – se on kumppani, joka auttaa sinua palvelemaan asiakkaitasi paremmin ja tehostamaan liiketoimintaasi.</p>
             </div>
             <div class="features-brief-grid">
                 <div class="feature-brief-item">
-                    <div class="feature-icon"><i class="fas fa-rocket"></i></div>
-                    <h3>Virtaviivaistettu perukirjaprosessi</h3>
-                    <p>Tehosta perukirjojen laadintaa selkeällä ja keskitetyllä näkymällä kaikkiin projekteihin, tehtäviin ja dokumentteihin.</p>
+                    <div class="feature-icon"><i class="fas fa-tasks"></i></div>
+                    <h3>Tehostettu työnkulku</h3>
+                    <p>Virtaviivaista kaikki hautaustoimiston prosessit asiakkaan ensikontaktista laskutukseen. Säästä aikaa ja vähennä manuaalista työtä.</p>
                 </div>
                 <div class="feature-brief-item">
-                    <div class="feature-icon"><i class="fas fa-lightbulb"></i></div>
-                    <h3>Strateginen etu kilpailijoihin</h3>
-                    <p>LLM-pohjaiset analyysit tuottavat ylivoimaista tarkkuutta ja minimoivat riskit. Tarjoa palveluita, joihin muut eivät pysty.</p>
+                    <div class="feature-icon"><i class="fas fa-users"></i></div>
+                    <h3>Parempi asiakaspalvelu</h3>
+                    <p>Tarjoa omaisille selkeää ja ajantasaista tietoa. Keskitetty tiedonhallinta varmistaa, että kaikki tiimissäsi ovat perillä järjestelyistä.</p>
                 </div>
                 <div class="feature-brief-item">
-                    <div class="feature-icon"><i class="fas fa-chart-line"></i></div>
-                    <h3>Skaalaa visiotasi rajattomasti</h3>
-                    <p>Hallitse vaivatta kasvavia asiakasmääriä ja monimutkaisia tapauksia. Rakenna räätälöityjä ratkaisuja tehokkaan APImme avulla. Varmista toimistosi tulevaisuus.</p>
+                    <div class="feature-icon"><i class="fas fa-chart-pie"></i></div>
+                    <h3>Kattava kokonaisnäkymä</h3>
+                    <p>Hallitse kaikkia toimintoja yhdestä paikasta: asiakastiedot, tehtävät, kalenteri, kuljetukset, tuotteet ja laskutus.</p>
                 </div>
                 <div class="feature-brief-item">
-                    <div class="feature-icon"><i class="fas fa-users-cog"></i></div>
-                    <h3>Ylivertainen asiakaskokemus</h3>
-                    <p>Tarjoa nopeampaa, läpinäkyvämpää ja teknologisesti edistynyttä palvelua, joka tekee vaikutuksen moderneihin asiakkaisiin.</p>
+                    <div class="feature-icon"><i class="fas fa-shield-halved"></i></div>
+                    <h3>Vähemmän virheitä</h3>
+                    <p>Automatisoidut prosessit ja selkeät näkymät auttavat minimoimaan inhimillisiä virheitä ja varmistamaan laadukkaan palvelun.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Pain Points Section (Now "New Standard") -->
-    <section class="pain-points" id="new-standard">
+    <!-- Modernization Section (Replaces Pain Points) -->
+    <section class="pain-points" id="modernisoi"> <!-- new-standard ID was used by nav, so changed this section's ID -->
         <div class="section-container">
             <div class="section-title">
-                <h2>Enemmän kuin tehokkuutta: lakialan uusi standardi</h2>
-                <p>Unohda vanhat pullonkaulat. <span class="lakivuo-highlight">Lakivuo</span> ei ainoastaan ratkaise eilispäivän haasteita – se luo perustan tulevaisuuden menestykselle.</p>
+                <h2>Modernisoi hautaustoimistosi toimintatavat</h2>
+                <p>Jätä vanhanaikaiset menetelmät taakse. <span class="lakivuo-highlight">ToimiVuo</span> tuo tehokkuutta ja selkeyttä hautaustoimistosi arkeen.</p>
             </div>
             <div class="pain-points-grid">
                 <div class="pain-point-item">
-                    <div class="pain-point-icon"><i class="fas fa-exchange-alt"></i></div>
-                    <h3>Aiemmin: tuntien manuaalityö <br><span class="lakivuo-way-arrow">&#8680;</span> Nyt: minuuteissa valmista</h3>
-                    <p><span class="lakivuo-highlight">Lakivuo</span> automatisoi aikaa vievimmät rutiinit, kuten perukirjojen ja testamenttien analysoinnin, vapauttaen asiantuntijoidesi aikaa strategiseen työhön.</p>
+                    <div class="pain-point-icon"><i class="fas fa-folder-minus"></i></div>
+                    <h3>Aiemmin: Hajanaiset tiedot & paperityöt <br><span class="lakivuo-way-arrow">&#8680;</span> Nyt: Kaikki digitaalisesti yhdessä paikassa</h3>
+                    <p><span class="lakivuo-highlight">ToimiVuo</span> kokoaa kaikki asiakastiedot, dokumentit, aikataulut ja tehtävät yhteen helppokäyttöiseen järjestelmään.</p>
                 </div>
                 <div class="pain-point-item">
-                    <div class="pain-point-icon"><i class="fas fa-shield-alt"></i></div>
-                    <h3>Aiemmin: piilevät virheet & riskit <br><span class="lakivuo-way-arrow">&#8680;</span> Nyt: AI-varmistettu tarkkuus</h3>
-                    <p>LLM-tekoälymme syväanalysoi dokumentit, tunnistaa puutteet ja ristiinviittaa tiedot, minimoiden kalliit virheet ja juridiset vastuut.</p>
+                    <div class="pain-point-icon"><i class="fas fa-clock"></i></div>
+                    <h3>Aiemmin: Manuaalinen aikataulutus & resurssien jako <br><span class="lakivuo-way-arrow">&#8680;</span> Nyt: Selkeä kalenteri & automaattiset muistutukset</h3>
+                    <p>Integroitu kalenteri helpottaa aikataulujen hallintaa ja varmistaa, että kaikki pysyvät ajan tasalla tulevista tapahtumista ja tehtävistä.</p>
                 </div>
                 <div class="pain-point-item">
-                    <div class="pain-point-icon"><i class="fas fa-sitemap"></i></div>
-                    <h3>Aiemmin: monimutkaisuuden pelko <br><span class="lakivuo-way-arrow">&#8680;</span> Nyt: selkeys & hallinta visualisoinnin avulla</h3>
-                    <p>Monimutkaisetkin perhe- ja omistussuhteet muuttuvat ymmärrettäviksi interaktiivisen sukupuu- ja visualisointityökalujemme avulla.</p>
+                    <div class="pain-point-icon"><i class="fas fa-comments"></i></div>
+                    <h3>Aiemmin: Tiedonkulun haasteet tiimin sisällä <br><span class="lakivuo-way-arrow">&#8680;</span> Nyt: Saumaton tiedonjako & yhteistyö</h3>
+                    <p>Paranna tiimisi yhteistyötä ja tiedonkulkua. Kaikki tarvittava tieto on kaikkien saatavilla reaaliajassa, vähentäen väärinkäsityksiä.</p>
                 </div>
                 <div class="pain-point-item">
-                    <div class="pain-point-icon"><i class="fas fa-user-shield"></i></div>
-                    <h3>Aiemmin: Asiakkaat karkaavat DIY-palveluihin <br><span class="lakivuo-way-arrow">&#8680;</span> Nyt: Tarjoa ylivoimainen, tehokas palvelu</h3>
-                    <p>Lakivuon avulla tarjoat modernin, luotettavan ja henkilökohtaisen palvelukokemuksen, joka sitouttaa asiakkaasi ja vahvistaa asiantuntija-asemaasi itsepalvelupalveluita vastaan.</p>
+                    <div class="pain-point-icon"><i class="fas fa-heart-circle-check"></i></div>
+                    <h3>Aiemmin: Stressaava ja aikaavievä hallinto <br><span class="lakivuo-way-arrow">&#8680;</span> Nyt: Enemmän aikaa asiakkaille ja vähemmän paperitöitä</h3>
+                    <p><span class="lakivuo-highlight">ToimiVuo</span> auttaa sinua keskittymään olennaiseen – omaisten tukemiseen ja laadukkaan palvelun tarjoamiseen – automatisoimalla rutiinitehtäviä.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- CTA Section -->
-    <section class="cta-section" id="contact">
+    <section class="cta-section" id="yhteys"> <!-- Changed ID to match nav link -->
         <div class="section-container">
             <div class="section-title">
-                <h2>Oletko valmis johtamaan alan muutosta?</h2>
-                <p>Ota yhteyttä ja varaa henkilökohtainen esittely. Näytämme, miten <b>Lakivuo</b> voi auttaa juuri sinun toimistoasi.</p>
+                <h2>Valmiina tehostamaan toimintaasi?</h2>
+                <p>Ota yhteyttä ja varaa henkilökohtainen esittely. Näytämme, miten <b>ToimiVuo</b> voi mullistaa hautaustoimistosi arjen.</p>
             </div>
             <a href="#calendly-section-target" class="button primary-button scroll-to">
-                <i class="fas fa-calendar-check"></i> Varaa strateginen keskustelu & demo
+                <i class="fas fa-calendar-check"></i> Varaa esittely & keskusteluaika
             </a>
         </div>
     </section>
     
-    <!-- Perukirja Widget Demo Section -->
-    <section class="perukirja-widget-demo" id="perukirja-widget-demo">
-        <div class="section-container">
-            
-            <div id="perukirja-widget-root"></div>
-        </div>
-    </section>
-
-    <!-- API Partners Section - Simplified -->
-    <section class="api-partners" id="api-partner"> 
-        <div class="section-container">
-            <div class="section-title">
-                <h2>Rakenna tulevaisuutta kanssamme: API & integraatiomahdollisuudet</h2>
-                <p>Tarjoamme edelläkävijöille työkalut räätälöityjen ratkaisujen luomiseen ja palvelutarjooman laajentamiseen. Tutustu, kuinka voit integroida <span class="lakivuo-highlight">Lakivuon</span> ytimen omaan innovaatioosi.</p>
-            </div>
-            <!-- Add partner logos here if available, e.g.: -->
-            <!--
-            <div class="api-partners-grid">
-                <img src="logo-placeholder1.svg" alt="Partner 1" class="partner-logo">
-                <img src="logo-placeholder2.svg" alt="Partner 2" class="partner-logo">
-                <img src="logo-placeholder3.svg" alt="Partner 3" class="partner-logo">
-            </div>
-            -->
-        </div>
-    </section>
+    <!-- Removed Perukirja Widget Demo Section -->
+    <!-- Removed API Partners Section -->
 
     <!-- Calendly Embed Section -->
     <section class="calendly-section" id="calendly-section-target"> 
         <div class="section-container">
             <div class="section-title">
                 <h2>Varaa esittelyaika</h2>
-                <p>Valitse sinulle sopiva aika kalenterista, niin keskustellaan tarpeistasi tarkemmin.</p>
+                <p>Valitse sinulle sopiva aika kalenterista, niin keskustellaan tarpeistasi ja ToimiVuon mahdollisuuksista tarkemmin.</p>
             </div>
             <!-- Calendly inline widget begin -->
             <div class="calendly-inline-widget" data-url="https://calendly.com/allann/60min" style="min-width:320px;height:700px;"></div>
             <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
             <p style="text-align: center; margin-top: 20px; font-size: 0.9rem;">
                 Voit myös ottaa yhteyttä sähköpostitse: 
-                <a href="mailto:lakivuo@gmail.com" style="color: var(--accent-primary); text-decoration: underline;">lakivuo@gmail.com</a>
+                <a href="mailto:toimivuo@gmail.com" style="color: var(--accent-primary); text-decoration: underline;">toimivuo@gmail.com</a> <!-- Updated email -->
             </p>
         </div>
     </section>
@@ -235,23 +258,17 @@
     <footer>
         <div class="footer-container">
             <div class="footer-logo">
-                <i class="fa-solid fa-gavel"></i> Laki<span class="logo-text-accent">vuo</span>
+                Toimi<span class="logo-text-accent">Vuo</span>
             </div>
             <ul class="footer-links">
                 <li><a href="#home">Alkuun</a></li>
-                <li><a href="#lakivuo-edge">Ominaisuudet</a></li>
-                <li><a href="#demo">Demo</a></li>
-                <li><a href="#new-standard">Ratkaisut</a></li>
-                <li><a href="#contact">Ota Yhteyttä</a></li>
+                <li><a href="#toimivuo-ominaisuudet">Ominaisuudet</a></li>
+                <li><a href="#hyodyt">Hyödyt</a></li>
+                <li><a href="#yhteys">Ota Yhteyttä</a></li>
                 <li><a href="#">Tietosuoja</a></li> <!-- Placeholder -->
             </ul>
-            <!--<div class="social-icons">
-                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-            </div>-->
             <div class="footer-bottom-text">
-                &copy; <span id="currentYear"></span> <span class="lakivuo-highlight">Lakivuo</span>. Kaikki oikeudet pidätetään. EU GDPR Compliant.
+                &copy; <span id="currentYear"></span> <span class="lakivuo-highlight">ToimiVuo</span>. Kaikki oikeudet pidätetään. EU GDPR Compliant.
             </div>
         </div>
     </footer>
@@ -295,14 +312,14 @@
         });
 
         // Optional: Intersection Observer for animations
-        const animatedElements = document.querySelectorAll('.hero-text, .hero-featured-video, .feature-video-item, .feature-brief-item, .pain-point-item');
+        const animatedElements = document.querySelectorAll('.hero-text, .hero-featured-video img, .feature-video-item, .feature-brief-item, .pain-point-item'); // Adjusted selector for hero image
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     // Apply specific animations based on class, or a general one
                     if (entry.target.classList.contains('hero-text')) {
                         entry.target.style.animation = 'fadeInLeft 1s ease-out forwards';
-                    } else if (entry.target.classList.contains('hero-featured-video')) {
+                    } else if (entry.target.closest('.hero-featured-video')) { // Adjusted to target the image within hero-featured-video
                         entry.target.style.animation = 'fadeInRight 1s ease-out 0.3s forwards';
                     } else {
                         // General fadeInUp for other observed elements
@@ -320,18 +337,7 @@
         });
 
     </script>
-    <!-- Import map to resolve ES module dependencies -->
-    <script type="importmap">
-    {
-      "imports": {
-        "react": "https://esm.sh/react@18.2.0",
-        "react-dom/client": "https://esm.sh/react-dom@18.2.0/client",
-        "lucide-react": "https://esm.sh/lucide-react@0.395.0" 
-      }
-    }
-    </script>
-    <!-- Load the mounting script as a module -->
-    <script type="module" src="mount-widget.js"></script>
+    <!-- Removed import map and mount-widget.js script tag -->
 
 </body>
 </html>
